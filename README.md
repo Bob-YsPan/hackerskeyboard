@@ -9,14 +9,15 @@ They support both the full 5-row layout and the 5-row compact layout.
 
 Suggested options:
 
-- "portrait mode": 5-row compact layout (ignore the "US QWERTY only!" warning, unless you need other layouts)
+- "portrait mode": 5-row compact layout (ignore the "US QWERTY only!" warning, unless you need other layouts); note that some some APL/BQN characters aren't available in the base compact layout - you'll need to configure a gesture for toggling the extension row
 - "landscape mode": full 5-row layout
 - Lower keyboard height to what you feel is comfortable
 - "Theme and label settings → Labelled alternative keys": Show all hint labels
 - "Theme and label settings → Keyboard Theme" can be chosen to your liking
 - "Auto-capitalisation": off
-- "Double-tab Shift mode": off
-- "Ctrl-A (select all) override": "Use Ctrl-A (no override)" to enable ctrl+a
+- "Gesture and key actions": "Toggle extension row" somewhere (note that for the gesture to register, both the start & end point of the touch must be within the keyboard)
+- "Ctrl-A (select all) override": "Use Ctrl-A (no override)" to have ctrl+a for Select All
+- "Popup mini-keyboard contents" → "Add shifter"
 - "Long-press duration": set this to the lowest number you're comfortable with (I've set it to 160ms)
 - "Suggested punctuation" → `{}[]()` (as those are harder to type in compact portrait otherwise)
 
