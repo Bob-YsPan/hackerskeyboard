@@ -7,7 +7,9 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.1'
+        // Plugin version 7.4.1 capable for Gradle 8.5 and JDK11
+        // (Some old code only can be built on this JDK version)
+        classpath 'com.android.tools.build:gradle:7.4.1'
         
 
         // NOTE: Do not place your application dependencies here; they belong
