@@ -81,14 +81,14 @@ public class InputLanguageSelection extends PreferenceActivity {
         "en", "en_CX", "en_AL", "en_BQ", "en_DV", "en_GB", "es", "es_LA", "fa", "fi", "fr",
         "fr_CA", "he", "hr", "hu", "hu_QY", "hy", "it", "iw", "lo", "lt",
         "nb", "pt_PT", "ro", "ru", "ru_PH", "si", "sk", "sk_QY", "sl",
-        "sr", "sv", "ta", "th", "tr", "uk"
+        "sr", "sv", "ta", "th", "tr", "uk", "zh_TW"
     };
 
     private static final String[] KBD_4_ROW = {
         "ar", "bg", "bg_ST", "cs", "cs_QY", "da", "de", "de_NE", "el",
         "en", "en_CX", "en_AL", "en_BQ", "en_DV", "es", "es_LA", "es_US", "fa", "fr", "fr_CA",
         "he", "hr", "hu", "hu_QY", "iw", "nb", "ru", "ru_PH", "sk", "sk_QY",
-        "sl", "sr", "sv", "tr", "uk"
+        "sl", "sr", "sv", "tr", "uk", "zh_TW"
     };
 
     private static String getLocaleName(Locale l) {
@@ -116,6 +116,8 @@ public class InputLanguageSelection extends PreferenceActivity {
             return "Slovenčina (QWERTY)";
         } else if (lang.equals("ru") && country.equals("PH")) {
             return "Русский (Phonetic)";
+        } else if (lang.equals("zh") && country.equals("TW")) {
+            return "繁體中文 (台灣；注音對應英文)";
         } else if (lang.equals("bg")) {
             if (country.equals("ST")) {
                 return "български език (Standard)";
@@ -344,9 +346,23 @@ public class InputLanguageSelection extends PreferenceActivity {
                 } else {
                     l = new Locale(language);                	
                 }
-                
+
+                boolean istw = false;
+                if (language.equals("zh")) {
+                    System.out.println(s);
+                    if (len == 5) {
+                        if (s.substring(3, 5).equals("TW"))
+                            istw = true;
+                    }
+                    else {
+                        if (s.substring(4, 6).equals("rTW"))
+                            istw = true;
+                    }
+                }
                 // Exclude languages that are not relevant to LatinIME
-                if (arrayContains(BLACKLIST_LANGUAGES, language)) continue;
+                if (arrayContains(BLACKLIST_LANGUAGES, language)) {
+                    if (!istw) continue;
+                }
 
                 if (finalSize == 0) {
                     preprocess[finalSize++] =

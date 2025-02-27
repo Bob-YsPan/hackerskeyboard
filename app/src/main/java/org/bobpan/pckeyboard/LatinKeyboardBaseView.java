@@ -625,7 +625,8 @@ public class LatinKeyboardBaseView extends View implements PointerTracker.UIProx
         mKeyRepeatInterval = res.getInteger(R.integer.config_key_repeat_interval);
     }
 
-    private boolean showHints7Bit() {
+    // Orig function name: showHints7Bit
+    private boolean needFilterHint() {
         return LatinIME.sKeyboardSettings.hintMode >= 1;
     }
 
@@ -1031,7 +1032,7 @@ public class LatinKeyboardBaseView extends View implements PointerTracker.UIProx
                 paint.setShadowLayer(mShadowRadius, 0, 0, mShadowColor);
 
                 // Draw hint label (if present) behind the main key
-                String hint = key.getHintLabel(showHints7Bit(), showHintsAll());
+                String hint = key.getHintLabel(needFilterHint(), showHintsAll());
                 if (!hint.equals("") && !(key.isShifted() && key.shiftLabel != null && hint.charAt(0) == key.shiftLabel.charAt(0))) {
                     int hintTextSize = (int)(mKeyTextSize * 0.6 * mLabelScale);
                     paintHint.setTextSize(hintTextSize);
@@ -1047,7 +1048,7 @@ public class LatinKeyboardBaseView extends View implements PointerTracker.UIProx
                 }
 
                 // Draw alternate hint label (if present) behind the main key
-                String altHint = key.getAltHintLabel(showHints7Bit(), showHintsAll());
+                String altHint = key.getAltHintLabel(needFilterHint(), showHintsAll());
                 if (!altHint.equals("")) {
                     int hintTextSize = (int)(mKeyTextSize * 0.6 * mLabelScale);
                     paintHint.setTextSize(hintTextSize);

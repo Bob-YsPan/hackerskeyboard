@@ -645,11 +645,12 @@ public class Keyboard {
                 hint = "";
                 if (shiftLabel != null && !isSimpleUppercase) {
                     char c = shiftLabel.charAt(0);
-                    if (wantAll || wantAscii && is7BitAscii(c)) {
+                    if (wantAll || wantAscii && filterHint(c)) {
                         hint = Character.toString(c);
                     }
                 }
             }
+            Log.w("PC Keyboard", "Hint Label = " + hint);
             return hint;
         }
 
@@ -659,18 +660,22 @@ public class Keyboard {
                 String popup = getPopupKeyboardContent(false, false, false);
                 if (popup.length() > 0) {
                     int c = popup.codePointAt(0);
-                    if (wantAll || c==(char)c && wantAscii && is7BitAscii((char)c)) {
+                    if (wantAll || c==(char)c && wantAscii && filterHint((char)c)) {
                         altHint = new String(Character.toChars(c));
                         if (c=='↕'||c=='↩') altHint+= '\uFE0E';
                     }
                 }
             }
+            Log.w("PC Keyboard", "AltHint Label = " + altHint);
             return altHint;
         }
 
-        private static boolean is7BitAscii(char c) {
+        // Filter hint chars to prevent some charter like A~Z show onto the hint area
+        // Orig. function name: is7BitAscii()
+        private static boolean filterHint(char c) {
             if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z')) return false;
-            return c >= 32 && c < 127;
+            // Edit: Remove limit for c < 127 to draw more chars.
+            return c >= 32;
         }
         
         /**

@@ -18,13 +18,60 @@
 */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="alternates_for_a">àáâãäåæ</string>
-    <string name="alternates_for_e">èéêë</string>
-    <string name="alternates_for_i">ìíîï</string>
-    <string name="alternates_for_o">òóôõöœø</string>
-    <string name="alternates_for_u">ùúûü</string>
-    <string name="alternates_for_s">§ß</string>
-    <string name="alternates_for_n">ñ</string>
-    <string name="alternates_for_c">ç</string>
-    <string name="alternates_for_y">ýÿ</string>
+    <string name="alternates_for_backtick">～‵</string>
+    <string name="alternates_for_dash">ㄦ－＿</string>
+    <string name="alternates_for_backslash">＼｜</string>
+    <string name="alternates_for_semicolon">ㄤ：；</string>
+    <string name="alternates_for_equal">＋＝</string>
+    <string name="alternates_for_l_bracket">『【［｛</string>
+    <string name="alternates_for_r_bracket">』】］｝</string>
+    <string name="alternates_for_1">ㄅ！</string>
+    <string name="alternates_for_2">ㄉ＠</string>
+    <string name="alternates_for_3">ˇ＃</string>
+    <string name="alternates_for_4">ˋ＄</string>
+    <string name="alternates_for_5">ㄓ％</string>
+    <string name="alternates_for_6">ˊ︿</string>
+    <string name="alternates_for_7">˙＆</string>
+    <string name="alternates_for_8">ㄚ＊※</string>
+    <string name="alternates_for_9">ㄞ「（</string>
+    <string name="alternates_for_0">ㄢ」）</string>
+    <string name="alternates_for_quote">、“”;ㄤ-ㄦ</string>
+    <string name="alternates_for_comma">ㄝ，〈《＜</string>
+    <string name="alternates_for_dot">ㄡ。．〉》＞</string>
+    <string name="alternates_for_slash">ㄥ？／</string>
+    
+    
+    <string name="alternates_for_a">ㄇ</string>
+    <string name="alternates_for_b">ㄖ</string>
+    <string name="alternates_for_c">ㄏ</string>
+    <string name="alternates_for_d">ㄎ</string>
+    <string name="alternates_for_e">ㄍ</string>
+    <string name="alternates_for_f">ㄑ</string>
+    <string name="alternates_for_g">ㄕ</string>
+    <string name="alternates_for_h">ㄘ</string>
+    <string name="alternates_for_i">ㄛ</string>
+    <string name="alternates_for_j">ㄨ</string>
+    <string name="alternates_for_k">ㄜ</string>
+    <string name="alternates_for_l">ㄠ</string>
+    <string name="alternates_for_m">ㄩ</string>
+    <string name="alternates_for_n">ㄙ</string>
+    <string name="alternates_for_o">ㄟ</string>
+    <string name="alternates_for_p">ㄣ</string>
+    <string name="alternates_for_q">ㄆ</string>
+    <string name="alternates_for_r">ㄐ</string>
+    <string name="alternates_for_s">ㄋ</string>
+    <string name="alternates_for_t">ㄔ</string>
+    <string name="alternates_for_u">ㄧ</string>
+    <string name="alternates_for_v">ㄒ</string>
+    <string name="alternates_for_w">ㄊ</string>
+    <string name="alternates_for_x">ㄌ</string>
+    <string name="alternates_for_y">ㄗ</string>
+    <string name="alternates_for_z">ㄈ</string>
+
+    <string name="alternates_for_a_umlaut"></string>
+    <string name="alternates_for_ae"></string>
+    <string name="alternates_for_cyrillic_e"></string>
+    <string name="alternates_for_cyrillic_soft_sign"></string>
+    <string name="alternates_for_o_umlaut"></string>
+    <string name="alternates_for_oe"></string>
 </resources>

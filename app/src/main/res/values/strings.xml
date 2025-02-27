@@ -19,9 +19,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Title for Latin keyboard  -->
-        <string name="english_ime_name">Array Hacker\'s Keyboard</string>
+        <string name="english_ime_name">Bob Hacker\'s Keyboard</string>
     <!-- Title for Latin keyboard settings activity / dialog -->
-    <string name="english_ime_settings">Settings for Array Hacker\'s Keyboard</string>
+    <string name="english_ime_settings">Settings for Bob Hacker\'s Keyboard</string>
     <!-- Title for Latin keyboard input options dialog -->
     <string name="english_ime_input_options">Input options</string>
 
@@ -637,7 +637,7 @@
     <string name="main_setup_test">Test</string>
     <string name="main_body"><Data>
       <![CDATA["
-        <h2>Array Hacker's Keyboard</h2>
+        <h2>Bob Hacker's Keyboard</h2>
         
         See <a href='https://github.com/dzaima/hackerskeyboard/blob/master/README.md'>the README</a> for information about this fork. The original unmodified text follows.
         
