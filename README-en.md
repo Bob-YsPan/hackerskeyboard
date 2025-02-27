@@ -13,7 +13,7 @@ This fork of [Klaus's Hacker's Keyboard](https://github.com/klausw/hackerskeyboa
 - **For tablet users**, enable the `Full 5-row Layout` for the best Zhuyin typing experience!  
   ![full-layout](full1.png)  
 - **For small-screen devices**, consider using the `Compact 5-row Layout` and enable the `Popup Mini Keyboard` setting. By long-pressing the `;` key, you can enter the `-` symbol for the `ㄦ` Zhuyin.  
-  (Alternatively, you can activate an additional sixth row input using the *spacebar swipe-down gesture*!)  
+  (Alternatively, you can activate an additional sixth row input using the *spacebar swipe-up gesture*!)  
   ![compat-layout-1](compat2.jpg)  
   ![compat-layout-2](compat3.jpg)  
   
