@@ -1,4 +1,4 @@
-## [Hacker's Keyboard](https://play.google.com/store/apps/details?id=org.pocketworkstation.pckeyboard) 的注音提示鍵盤布局
+## [Hacker's Keyboard](https://play.google.com/store/apps/details?id=org.pocketworkstation.pckeyboard) 並新增注音提示鍵盤布局
   
 這個專案是 [Klaus's Hacker's Keyboard](https://github.com/klausw/hackerskeyboard) 的分支，新增了一個鍵盤布局：  
 - 繁體中文 (台灣；注音對應英文) (zh-TW)  
