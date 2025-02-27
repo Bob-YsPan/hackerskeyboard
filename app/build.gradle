@@ -7,8 +7,8 @@ android {
         applicationId 'org.bobpan.pckeyboard'
         minSdkVersion 14
         targetSdkVersion 26
-        versionCode 1041002
-        versionName 'v2.2'
+        versionCode 1041004
+        versionName 'v2.3'
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 //    signingConfigs {
