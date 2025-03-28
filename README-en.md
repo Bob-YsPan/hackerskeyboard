@@ -8,6 +8,12 @@ This fork of [Klaus's Hacker's Keyboard](https://github.com/klausw/hackerskeyboa
 - Added zh-TW language layout with Zhuyin as *AltChars* for keyboard hints  
 - Included common full-width symbols used in Chinese environments  
 - Improved the zh-TW 5-row compact layout, changing the `quote` button to `semi-colon` button to enhance the Zhuyin typing experience  
+
+### Note for Android 14+ users
+- To ensure the best user experience, please enable the **Notification** permission to make sure important alerts can be displayed when typing!
+- In addition, the notification permission can also enable resident notifications to call the keyboard, which is more convenient for programs (e.g. Termux) that are use the gesture navigation and can only force call out the keyboard at side-wipe menu.
+
+Translated with DeepL.com (free version)
   
 ### Recommended Zhuyin Layout Options
 - **For tablet users**, enable the `Full 5-row Layout` for the best Zhuyin typing experience!  
